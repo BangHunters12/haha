@@ -1,60 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
+/* Header */
 header {
     background: #19283B;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-}
-
-header .logo {
-    float: left;
-    width: 100px;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
     padding: 20px 0;
-    background: #ffffff;
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #f4b41a;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #f4b41a;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #333;
+    color: #f4b41a;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+main p {
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
 footer {
     background: #333;
-    color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }
