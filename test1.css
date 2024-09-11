@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Header */
 header {
     background: #19283B;
@@ -74,12 +75,13 @@ nav a:hover {
 .cta-button:hover {
     background: #333;
     color: #f4b41a;
-}
 
+
+}
 /* Main Content */
 main {
     padding: 40px 0;
-    background: #f4f4f4;
+    background: #949292;
     text-align: center;
 }
 
@@ -108,3 +110,27 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
+/* Hero Section */
+.hero {
+    background: #cccccc; /* Abu-abu */
+    color: #333; /* Menyesuaikan teks agar kontras dengan background */
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+    background: #cccccc; /* Abu-abu */
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #cccccc; /* Abu-abu */
+    color: #333; /* Menyesuaikan teks agar kontras dengan background */
+    padding: 20px 0;
+    text-align: center;
+}
+:last-child
